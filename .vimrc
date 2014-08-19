@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'wting/rust.vim'
 Bundle 'scrooloose/nerdcommenter'
+Plugin 'altercation/vim-colors-solarized'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
