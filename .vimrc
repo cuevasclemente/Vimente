@@ -11,8 +11,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'wting/rust.vim'
+Bundle 'git://github.com/jceb/vim-orgmode'
 Bundle 'scrooloose/nerdcommenter'
-Plugin 'altercation/vim-colors-solarized'
+Bundle 'git://github.com/davidhalter/jedi-vim'
+Bundle 'git://github.com/wmvanvliet/vim-ipython'
+Bundle 'git://github.com/tpope/vim-speeddating'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Bundle 'chase/vim-ansible-yaml'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -34,3 +40,4 @@ execute pathogen#infect()
 syntax enable
 set background=dark
 colorscheme solarized
+let g:vim_markdown_folding_disabled=1
