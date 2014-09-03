@@ -9,6 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'wting/rust.vim'
 Bundle 'git://github.com/jceb/vim-orgmode'
