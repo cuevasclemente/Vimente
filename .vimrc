@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'JuliaLang/julia-vim'
+Plugin 'tpope/vim-classpath'
 Plugin 'wting/rust.vim'
 Bundle 'git://github.com/jceb/vim-orgmode'
 Bundle 'scrooloose/nerdcommenter'
