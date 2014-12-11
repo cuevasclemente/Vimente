@@ -17,7 +17,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'wting/rust.vim'
 Bundle 'git://github.com/jceb/vim-orgmode'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'git://github.com/davidhalter/jedi-vim'
+"Bundle 'git://github.com/davidhalter/jedi-vim'
 Bundle 'git://github.com/wmvanvliet/vim-ipython'
 Bundle 'git://github.com/tpope/vim-speeddating'
 Plugin 'godlygeek/tabular'
@@ -26,7 +26,9 @@ Bundle 'chase/vim-ansible-yaml'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'vim-scripts/paredit.vim'
+Plugin 'vim-scripts/utl.vim'
 Plugin 'cespare/vim-toml'
+Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,4 +51,8 @@ execute pathogen#infect()
 syntax enable
 set background=dark
 colorscheme solarized
-let g:vim_markdown_folding_disabled=1
+filetype plugin indent on
+
+let g:vim_markdown_folding_disabled= 1
+let g:pymode_rope_complete_on_dot = 0 
+let g:pymode_python = 'python3'
