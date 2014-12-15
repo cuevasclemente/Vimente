@@ -12,6 +12,11 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'tpope/vim-classpath'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'hdima/python-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'wting/rust.vim'
@@ -45,14 +50,35 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
+" Don't remember what this does
 filetype plugin indent on
+" Set javascript for .json files
 autocmd BufNewFile,BufRead *.json set ft=javascript
+" Use Pathogen... for some reason...
 execute pathogen#infect()
+" Enable syntax highlighting
 syntax enable
+" Solarized stuff
 set background=dark
 colorscheme solarized
-filetype plugin indent on
 
+"Turn off markdown folding
 let g:vim_markdown_folding_disabled= 1
+" Turn off dot autocomplete
 let g:pymode_rope_complete_on_dot = 0 
 let g:pymode_python = 'python3'
+let python_highlight_all = 1
+" Backspace through indent objects
+set backspace=indent,eol,start
+" Above no longer necessary since there are no indent objects anymore because
+" of this
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+" Tell autocomplete to not look int eh file system
+set complete-=i
+" Change leader key to ','
+let mapleader=","
+
+
+
